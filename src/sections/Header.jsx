@@ -35,12 +35,11 @@ const Header = () => {
               isMenuOpen ? "translate-x-0 px-10" : "-translate-x-full"
             } md:block z-10 h-screen md:h-auto p-6 md:p-0 bg-gray-200 md:bg-transparent`}
           >
-            <ul className="navbar-list flex flex-col space-y-0 md:flex-row md:space-x-1 lg:space-x-3 xl:space-x-6 md:space-y-0 uppercase text-sm font-bold border-t border-gray-400 md:border-none">
+            <ul className="navbar-list flex flex-col space-y-0 md:flex-row md:space-x-1 lg:space-x-3 xl:space-x-6 md:space-y-0 md:text-base uppercase font-extrabold border-t border-gray-400 md:border-none">
               {[
                 { label: "Home", link: "#home" },
                 { label: "About Us", link: "#about" },
                 { label: "Our Services", link: "#destination" },
-                { label: "Packages", link: "#package" },
                 { label: "Gallery", link: "#gallery" },
                 { label: "FAQ", link: "#faq" },
                 { label: "Contact Us", link: "#contact" },

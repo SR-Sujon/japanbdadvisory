@@ -1,11 +1,28 @@
+import { motion } from "framer-motion";
+
 const Contact = () => {
+  const fadeInVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+
   return (
     <section className="mt-20 text-gray-600 body-font relative">
       <h2 className="text-3xl font-extrabold text-gray-900 text-center">
         Contact Us
       </h2>
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative font-sans">
+      <p className="mt-2 text-lg text-gray-500 text-center font-sans">
+        What are you waiting for then? Let us know your queries here.
+      </p>
+      <div className="mt-[-48px] container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        {/** Animated Map Section */}
+        <motion.div
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-25% 0% -25% 0%" }}
+          className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative font-sans"
+        >
           <iframe
             width="100%"
             height="100%"
@@ -19,9 +36,7 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                29/E, Notunbazar Bus Stop, Dhaka, Bangladesh
-              </p>
+              <p className="mt-1">29/E, Notunbazar Bus Stop, Dhaka, Bangladesh</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
@@ -34,10 +49,18 @@ const Contact = () => {
               <p className="leading-relaxed">+88(019)16400505</p>
             </div>
           </div>
-        </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 border-t-2 border-gray-400 shadow-lg rounded-lg p-6 font-sans">
+        </motion.div>
+
+        {/** Animated Form Section */}
+        <motion.div
+          variants={fadeInVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-25% 0% -25% 0%" }}
+          className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 border-t-2 border-gray-400 shadow-lg rounded-lg p-6 font-sans"
+        >
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Lets Talk!
+            Let's Talk!
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
             Message us your queries, our representatives will get back to you soon.
@@ -89,7 +112,7 @@ const Contact = () => {
           <p className="text-xs text-gray-500 mt-3">
             Please wait for a few seconds after clicking the send button. Thank you!
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
