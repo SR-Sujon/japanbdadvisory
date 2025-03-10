@@ -75,11 +75,11 @@ const Services = () => {
               alt={service.title}
             />
             {/* Service Description */}
-            <div className="md:w-[50%] w-full bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg p-8 md:p-4 rounded-md">
+            <div className="md:w-[50%] w-full bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg p-6 lg:p-8 md:p-4 leading-tight rounded-md">
               <h3 className="text-3xl mt-8 mb-4 font-semibold font-serif text-white dark:text-white">
                 {service.title}
               </h3>
-              <p className="lg:text-lg md:text-sm mt-4 mb-4 px-4 font-serif font-medium text-justify text-white">
+              <p className="lg:text-lg md:text-sm sm:text-xs sm:px-0 mt-4 mb-4 font-serif font-medium text-justify text-white">
                 {service.description}
               </p>
             </div>

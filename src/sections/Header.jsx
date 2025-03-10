@@ -58,8 +58,8 @@ const Header = () => {
           <div className="header-btn-group hidden xl:flex items-center space-x-4 overflow-hidden">
             {/* Phone Number Section */}
             <div className="flex flex-col items-start">
-              <p className="font-semibold font-sans  text-gray-800">+88(019)16400505</p>
-              <p className="ml-2 text-sm font-sans text-gray-600">Calling Hours: 10:00-18:00</p>
+              <p className="ml-1 font-semibold font-sans text-sm text-gray-800">+88(019)16400505</p>
+              <p className="ml-2 font-sans text-sm text-gray-600">Calling Hours: 10:00-18:00</p>
             </div>
 
             {/* Book Now Button */}

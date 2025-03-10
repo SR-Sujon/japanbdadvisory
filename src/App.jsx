@@ -8,7 +8,7 @@ import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 const App = () => {
   return (
-    <div className='app'>
+    <div className='app overflow-hidden'>
       <Header />
       <Hero />
       <About />
