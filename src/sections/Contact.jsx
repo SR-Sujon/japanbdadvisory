@@ -7,7 +7,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-20 text-gray-600 body-font relative ">
+    <section id="contact" className="mt-20 text-gray-600 body-font relative ">
       <h2 className="text-3xl font-extrabold text-gray-900 text-center">
         Contact Us
       </h2>
@@ -59,7 +59,7 @@ const Contact = () => {
           viewport={{ once: true, margin: "-25% 0% -25% 0%" }}
           className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 border-t-2 border-gray-400 shadow-lg rounded-lg p-6 font-sans"
         >
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font font-serif">
+          <h2 className="text-gray-900 text-lg mb-1 font-bold title-font font-serif">
             Let's Talk!
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600 lg:text-lg md:text-base text-sm font-serif">

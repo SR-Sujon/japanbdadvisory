@@ -147,7 +147,7 @@ const Hero = () => {
               <h1 className="text-4xl font-bold font-serif mb-4">{slide.title}</h1>
               <p className="text-lg mb-6 font-serif font-semibold">{slide.subtitle}</p>
               <button className="bg-blue-600 text-white font-extrabold px-6 py-3 rounded-md hover:bg-blue-700">
-                {slide.buttonText}
+                <a href="#contact">{slide.buttonText}</a>
               </button>
             </div>
           </div>

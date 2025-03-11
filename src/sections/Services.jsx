@@ -40,9 +40,9 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-10 text-center overflow-x-hidden">
+    <section id="services" className="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-10 text-center overflow-x-hidden">
       {/* Title & Description */}
-      <h2 className="mt-10 mb-5 text-3xl font-extrabold text-gray-900">
+      <h2 className="mt-10 mb-5 text-3xl font-extrabold leading-tight text-gray-900 text-center">
         Our Services
       </h2>
       <p className="lg:mx-12 md:mx-8 mb-6 md:text-lg lg:text-xl text-gray-500 dark:text-gray-400 font-serif text-justify">
