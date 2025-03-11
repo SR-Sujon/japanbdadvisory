@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import gif_faq from "../assets/gif/Questions.gif";
 
 const FAQ = () => {
   const fadeInVariants = {
@@ -7,13 +8,14 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-20 font-serif">
+    <div id="faq" className="container relative flex flex-col justify-between h-full max-w-7xl px-10 mx-auto xl:px-0 mt-20 ">
+      <img src={gif_faq} alt="FAQ GIF" loading="lazy" className="scale-[60%] md:scale-[45%] mt-[-40%] md:mt-[-30%] md:mb-[-25%] mb-[-20%]"/>
       <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900 text-center">FAQs</h2>
-      <p className="mb-12 lg:text-lg md:text-base text-sm text-gray-500 text-center ">
+      <p className="mb-12 lg:text-lg md:text-base text-sm text-gray-500 text-center font-serif">
         Here are some frequently asked questions about our services and operations.
       </p>
 
-      <div className="w-full lg:ml-4">
+      <div className="w-full lg:ml-4 font-serif">
         {/** FAQ Container */}
         <div className="flex flex-col w-full mb-10 sm:flex-row">
           

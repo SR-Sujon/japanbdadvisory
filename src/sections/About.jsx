@@ -3,7 +3,7 @@ import gif_1 from "../assets/gif/Agreement.gif";
 
 const About = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section id="about" className="bg-white dark:bg-gray-900">
       <div className="lg:mt-[-16rem] grid max-w-7xl px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         
         {/* Left Side Content */}
@@ -29,7 +29,7 @@ const About = () => {
           </p>
 
           <a
-            href="#"
+            href="#contact"
             className="inline-flex items-center justify-center px-5 py-3 text-base font-extrabold text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             Speak to an Expert

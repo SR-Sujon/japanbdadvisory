@@ -16,7 +16,7 @@ const Header = () => {
       <div className="bg-white py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center lg:px-16 md:px-8 px-4">
           {/* Logo (leftmost corner) */}
-          <a href="#" className="logo flex-shrink-0 flex flex-col items-center">
+          <a href="#home" className="logo flex-shrink-0 flex flex-col items-center">
             <img
               src={logoimg}
               alt="Japan Bangladesh Advisory logo"
@@ -39,7 +39,7 @@ const Header = () => {
               {[
                 { label: "Home", link: "#home" },
                 { label: "About Us", link: "#about" },
-                { label: "Our Services", link: "#destination" },
+                { label: "Our Services", link: "#services" },
                 { label: "Gallery", link: "#gallery" },
                 { label: "FAQ", link: "#faq" },
                 { label: "Contact Us", link: "#contact" },
@@ -65,7 +65,7 @@ const Header = () => {
             {/* Book Now Button */}
             <div className="flex-shrink-0">
               <button className="btn btn-primary w-32 px-2 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 font-sans font-extrabold">
-                Book Now
+                <a href="#contact">Book Now</a>
               </button>
             </div>
           </div>

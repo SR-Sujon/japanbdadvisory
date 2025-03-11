@@ -6,6 +6,7 @@ import FAQ from './sections/FAQ.jsx'
 import Services from './sections/Services.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
+import Gallery from './sections/Gallery.jsx'
 const App = () => {
   return (
     <div className='app overflow-hidden'>
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <About />
       <Services />
+      <Gallery />
       <FAQ />
       <Contact />
       <Footer />
