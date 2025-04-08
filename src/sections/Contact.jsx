@@ -44,7 +44,7 @@ const Contact = () => {
               </h2>
               <a className="text-red-500 leading-relaxed lg:text-lg md:text-base text-sm">example@email.com</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
+                WHATSAPP
               </h2>
               <p className="leading-relaxed lg:text-lg md:text-base text-sm">+88(019)16400505</p>
             </div>
