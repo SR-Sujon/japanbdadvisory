@@ -28,7 +28,7 @@ const Contact = () => {
             height="100%"
             className="absolute inset-0"
             title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.5824453862188!2d90.42093887504974!3d23.797878986952504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c700205d5d5d%3A0xcaea09635c6458be!2sNotun%20Bazar%20Bus%20Stop.!5e0!3m2!1sen!2sbd!4v1741549080983!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1235.8376795411923!2d90.42083983097389!3d23.810253808808646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b1ce77ff97%3A0x6330df4b1fedb2cf!2sProgati%20Sarani%20Rd%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sjp!4v1745227201141!5m2!1sen!2sjp"
             style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md font-serif">
@@ -36,21 +36,21 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1 lg:text-lg md:text-base text-sm">29/E, Notunbazar Bus Stop, Dhaka, Bangladesh</p>
+              <p className="mt-1 lg:text-lg md:text-base text-sm">Level 9, Ridge Dale Complex, 75/2 Progoti Sarani, Gulshan, Dhaka 1212, Bangladesh</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-red-500 leading-relaxed lg:text-lg md:text-base text-sm">example@email.com</a>
+              <a className="text-red-500 leading-relaxed lg:text-lg md:text-base text-sm">hello@jbadvisory.org</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 WHATSAPP
               </h2>
-              <p className="leading-relaxed lg:text-lg md:text-base text-sm">+8801916-400505</p>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                HELPLINE
-              </h2>
               <p className="leading-relaxed lg:text-lg md:text-base text-sm">+8801511-400505</p>
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                CONTACT
+              </h2>
+              <p className="leading-relaxed lg:text-lg md:text-base text-sm">+8801916-400505</p>
             </div>
           </div>
         </motion.div>
