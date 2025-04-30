@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaGlobe } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGlobe, FaInstagram } from "react-icons/fa";
 import { FaPlane } from "react-icons/fa6"; // Import plane icon
 import { motion } from "framer-motion";
 
@@ -102,13 +102,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-6 border-t pt-4 flex justify-center space-x-4">
-        <a href="https://x.com/?lang=en" className="text-gray-500 hover:text-indigo-600">
-          <FaTwitter size={20} />
+        <a href="https://www.instagram.com/jba_advisory?igsh=bXk0aDNlOGE3NTdy" className="text-gray-500 hover:text-indigo-600" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={20} />
         </a>
-        <a href="https://www.facebook.com/" className="text-gray-500 hover:text-indigo-600">
+        <a href="https://www.facebook.com/share/1BwaUceaUH/" className="text-gray-500 hover:text-indigo-600" target="_blank" rel="noopener noreferrer">
           <FaFacebookF size={20} />
         </a>
-        <a href="https://www.linkedin.com/" className="text-gray-500 hover:text-indigo-600">
+        <a href="https://www.linkedin.com/company/106406180/admin/dashboard/" className="text-gray-500 hover:text-indigo-600" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn size={20} />
         </a>
         <a href="#home" className="text-gray-500 hover:text-indigo-600">
