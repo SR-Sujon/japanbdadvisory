@@ -28,7 +28,7 @@ const Contact = () => {
             height="100%"
             className="absolute inset-0"
             title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1235.8376795411923!2d90.42083983097389!3d23.810253808808646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b1ce77ff97%3A0x6330df4b1fedb2cf!2sProgati%20Sarani%20Rd%2C%20Dhaka%2C%20Bangladesh!5e0!3m2!1sen!2sjp!4v1745227201141!5m2!1sen!2sjp"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9884085804006!2d90.42610499999999!3d23.783427099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79687c86865%3A0x459500ce41b72ddb!2sHossain%20Market%2C%20Dhaka%201212%2C%20Bangladesh!5e0!3m2!1sen!2sjp!4v1745228159035!5m2!1sen!2sjp"
             style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md font-serif">
