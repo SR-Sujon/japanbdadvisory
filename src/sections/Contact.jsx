@@ -69,7 +69,8 @@ const Contact = () => {
           <p className="leading-relaxed mb-5 text-gray-600 lg:text-lg md:text-base text-sm font-serif">
             Message us your queries, our representatives will get back to you soon.
           </p>
-          <form action="https://formspree.io/f/mqakojka" method="POST">
+          <form action="https://formspree.io/f/mjkwabgg"
+            method="POST">
             <div className="form-group my-2 font-serif">
               <label htmlFor="name" className="form-label fw-bolder lg:text-lg md:text-base text-sm">
                 Name
