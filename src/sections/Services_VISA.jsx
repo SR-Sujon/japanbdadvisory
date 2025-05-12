@@ -40,7 +40,7 @@ const Services_VISA = () => {
             For individuals seeking job opportunities abroad, we provide visa support for different work categories.
           </p>
           <ul className="list-none pl-4 space-y-1">
-            <li>✔️ Job Visa Processing for Middle East, Europe, and Japan</li>
+            <li>✔️ Job Visa Processing for Japan</li>
             <li>✔️ Legal Documentation & Employer Verification</li>
             <li>✔️ Work Permit & Employment Compliance</li>
           </ul>
