@@ -5,11 +5,14 @@ import Header from './sections/Header';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Services from './sections/Services';
-import Services_VISA from './sections/Services_VISA';
+import ServicesVISA from './sections/ServicesVISA';
+import ServicesBusinessSetup from './sections/ServicesBusinessSetup';
 import Gallery from './sections/Gallery';
 import FAQ from './sections/FAQ';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import ServicesExpatManagement from './sections/ServicesExpatManagement';
+import ServicesTravelHospitality from './sections/ServicesTravelHospitality';
 
 const App = () => (
   <>
@@ -39,8 +42,26 @@ const App = () => (
 
       {/* Visa-only page */}
       <Route
-        path="/visa"
-        element={<Services_VISA />}
+        path="/services/visa"
+        element={<ServicesVISA />}
+      />
+
+      {/* Business page */}
+      <Route
+        path="/services/busines-setup"
+        element={<ServicesBusinessSetup />}
+      />
+
+      {/* Expat Management page */}
+      <Route
+        path="/services/expat-management"
+        element={<ServicesExpatManagement />}
+      />
+
+      {/* Travel ^ Hospitality page */}
+      <Route
+        path="/services/travel-hospitality"
+        element={<ServicesTravelHospitality />}
       />
     </Routes>
 

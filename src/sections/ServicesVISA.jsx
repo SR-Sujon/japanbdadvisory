@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Services_VISA = () => {
+const ServicesVISA = () => {
   return (
     <section id="visa" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -65,4 +65,4 @@ const Services_VISA = () => {
   );
 };
 
-export default Services_VISA;
+export default ServicesVISA;
