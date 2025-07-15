@@ -47,10 +47,6 @@ const Contact = () => {
                 WHATSAPP
               </h2>
               <p className="leading-relaxed lg:text-lg md:text-base text-sm">+8801511-400505</p>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                CONTACT
-              </h2>
-              <p className="leading-relaxed lg:text-lg md:text-base text-sm">+8801916-400505</p>
             </div>
           </div>
         </motion.div>
