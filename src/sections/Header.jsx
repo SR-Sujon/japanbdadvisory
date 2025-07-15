@@ -54,6 +54,7 @@ const Header = () => {
             </ul>
           </nav>
 
+<<<<<<< Updated upstream
           {/* Phone Number and Book Now Button (rightmost corner) */}
           <div className="header-btn-group hidden xl:flex items-center space-x-4 overflow-hidden">
             {/* Phone Number Section */}
@@ -67,6 +68,16 @@ const Header = () => {
               <button className="btn btn-primary w-32 px-2 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 font-sans font-extrabold">
                 <a href="#contact">Book Now</a>
               </button>
+=======
+          <div className="header-btn-group hidden xl:flex items-center space-x-4">
+            <div className="flex flex-col mr-6">
+              <p className="font-semibold text-sm text-gray-800">
+                +88(015)11400505
+              </p>
+              <p className="text-xs text-gray-600">
+                Calling Hours: 10:00–18:00
+              </p>
+>>>>>>> Stashed changes
             </div>
           </div>
         </div>
