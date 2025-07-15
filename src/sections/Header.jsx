@@ -136,7 +136,7 @@ const Header = () => {
           <div className="header-btn-group hidden xl:flex items-center space-x-4">
             <div className="flex flex-col mr-6">
               <p className="font-semibold text-sm text-gray-800">
-                +88(019)16400505
+                +88(015)11400505
               </p>
               <p className="text-xs text-gray-600">
                 Calling Hours: 10:00–18:00
