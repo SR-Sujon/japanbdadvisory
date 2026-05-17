@@ -16,7 +16,6 @@ import hero_img_10 from "../assets/images/hero/bd_kaptai_1.jpg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0); // eslint-disable-line no-unused-vars
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
   const settings = {
     dots: true,
     infinite: true,
