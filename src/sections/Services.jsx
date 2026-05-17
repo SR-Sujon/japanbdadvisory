@@ -1,40 +1,45 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import service_business from "../assets/images/services/service_business_setup.jpg";
 import service_expat from "../assets/images/services/service_expat.jpg";
 import service_jplang from "../assets/images/services/service_jp_language.jpg";
+import service_recruitment from "../assets/images/services/service_recruitment.jpg";
 import service_rentacar from "../assets/images/services/service_rentacar.jpg";
 import service_visa from "../assets/images/services/service_visa.jpg";
 
 const servicesData = [
   {
+    title: "Recruitment & Staffing Solutions",
+    description:
+      "We deliver high-quality hiring solutions tailored to your business needs. From permanent hiring and executive search to IT recruitment and bulk hiring, we ensure you get the right talent at the right time. We also offer flexible staffing models including contract staffing, project-based hiring, and scalable workforce solutions. We specialize in supporting newly established foreign companies in Bangladesh.",
+    imgUrl: service_recruitment,
+    route: "/services/recruitment-staffing",
+  },
+  {
     title: "Expat Management",
     description:
       "Navigating a new country can be challenging for expatriates. At JBA, we provide end-to-end expat management services, ensuring a smooth transition for foreign professionals and businesses. From relocation support and cultural orientation to administrative assistance, we help expatriates integrate seamlessly into the Bangladeshi business environment.",
     imgUrl: service_expat,
-  },
-  {
-    title: "Japanese Language Course",
-    description:
-      "Effective communication is key to professional success, especially in global markets. Our Japanese language courses cater to individuals and businesses looking to enhance their language proficiency. Whether for career advancement, business communication, or cultural adaptation, our structured training programs equip learners with essential linguistic skills for thriving in Japanese corporate settings.",
-    imgUrl: service_jplang,
+    route: "/services/expat-management",
   },
   {
     title: "VISA Process",
     description:
       "We simplify the complexities of visa applications for professionals, businesses, and expatriates. Our expert team ensures a hassle-free visa processing experience, handling documentation, approvals, and compliance with local regulations. Whether it’s work permits, business visas, or dependent visas, we streamline the process to save time and effort.",
-    imgUrl: service_visa,
-  },
+    imgUrl: service_visa,    route: "/services/visa",  },
   {
     title: "Travel & Hospitality Services",
     description:
       "Corporate travel should be convenient and stress-free. Our rent-a-car and hotel booking services provide tailored travel solutions for business professionals, expatriates, and visiting delegations. From comfortable accommodations to reliable transportation, we ensure a seamless travel experience for our clients in Bangladesh.",
     imgUrl: service_rentacar,
+    route: "/services/travel-hospitality",
   },
   {
     title: "Business Setup",
     description:
       "Entering a new market requires expert guidance. We assist foreign enterprises in establishing and expanding their business operations in Bangladesh. Our services include legal compliance, financial structuring, company registration, and operational support, ensuring a smooth and efficient business setup process. With our expertise, businesses can confidently establish a strong presence in the Bangladeshi market.",
     imgUrl: service_business,
+    route: "/services/busines-setup",
   },
 ];
 
@@ -68,12 +73,23 @@ const Services = () => {
               index % 2 === 1 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* Service Image */}
-            <img
-              className="md:w-[50%] w-full md:rounded-t-lg rounded-md"
-              src={service.imgUrl}
-              alt={service.title}
-            />
+            {/* Service Image with Hover Overlay */}
+            <Link 
+              to={service.route} 
+              className="md:w-[50%] w-full relative overflow-hidden rounded-md group cursor-pointer"
+            >
+              <img
+                className="w-full h-full object-cover md:rounded-t-lg rounded-md transition-all duration-300 group-hover:scale-110"
+                src={service.imgUrl}
+                alt={service.title}
+              />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 backdrop-blur-0 group-hover:backdrop-blur-sm transition-all duration-300 flex items-center justify-center">
+                <span className="text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                  Learn More →
+                </span>
+              </div>
+            </Link>
             {/* Service Description */}
             <div className="md:w-[50%] w-full bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg p-6 lg:p-8 md:p-4 leading-tight rounded-md">
               <h3 className="text-3xl mt-8 mb-4 font-semibold font-serif text-white dark:text-white">
