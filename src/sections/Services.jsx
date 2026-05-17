@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import service_business from "../assets/images/services/service_business_setup.jpg";
 import service_expat from "../assets/images/services/service_expat.jpg";
-import service_jplang from "../assets/images/services/service_jp_language.jpg";
 import service_recruitment from "../assets/images/services/service_recruitment.jpg";
 import service_rentacar from "../assets/images/services/service_rentacar.jpg";
 import service_visa from "../assets/images/services/service_visa.jpg";
