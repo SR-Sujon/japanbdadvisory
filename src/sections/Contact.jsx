@@ -42,7 +42,7 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-red-500 leading-relaxed lg:text-lg md:text-base text-sm">hello@jbadvisory.org</a>
+              <a href="mailto:hello@jbadvisory.org" className="text-red-500 leading-relaxed lg:text-lg md:text-base text-sm">hello@jbadvisory.org</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 WHATSAPP
               </h2>

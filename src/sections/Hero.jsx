@@ -15,7 +15,7 @@ import hero_img_9 from "../assets/images/hero/bd_sylhet_1.jpg";
 import hero_img_10 from "../assets/images/hero/bd_kaptai_1.jpg";
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0); 
+  const [currentSlide, setCurrentSlide] = useState(0); // eslint-disable-line no-unused-vars
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
   const settings = {
     dots: true,
@@ -128,11 +128,6 @@ const Hero = () => {
       img.src = image;
     });
   };
-
-    // Toggle menu visibility
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };
 
   return (
     <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] overflow-hidden">
