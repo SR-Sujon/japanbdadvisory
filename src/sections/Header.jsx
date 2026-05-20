@@ -13,10 +13,11 @@ const navItems = [
     type: "scroll",
     to: "services",
     children: [
-      { label: "VISA Services", to: "/services/visa", type: "router" },
-      { label: "Business Setup", to: "/services/busines-setup", type: "router" },
+      { label: "Recruitment & Staffing", to: "/services/recruitment-staffing", type: "router" },
       { label: "Expat Management", to: "/services/expat-management", type: "router" },
+      { label: "VISA Services", to: "/services/visa", type: "router" },
       { label: "Travel & Hospitality", to: "/services/travel-hospitality", type: "router" },
+      { label: "Business Setup", to: "/services/busines-setup", type: "router" },
     ],
   },
   { label: "Gallery", type: "scroll", to: "gallery" },

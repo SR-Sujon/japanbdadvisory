@@ -7,15 +7,19 @@ import About from './sections/About';
 import Services from './sections/Services';
 import ServicesVISA from './sections/ServicesVISA';
 import ServicesBusinessSetup from './sections/ServicesBusinessSetup';
+import ServicesRecruitment from './sections/ServicesRecruitment';
 import Gallery from './sections/Gallery';
 import FAQ from './sections/FAQ';
+import Clients from './sections/Clients';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import ServicesExpatManagement from './sections/ServicesExpatManagement';
 import ServicesTravelHospitality from './sections/ServicesTravelHospitality';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => (
   <>
+    <ScrollToTop />
     <Header />
 
     <Routes>
@@ -29,6 +33,7 @@ const App = () => (
             <Services id="services"/>
             <Gallery id="gallery"/>
             <FAQ id="faq"/>
+            <Clients id="clients"/>
             <Contact id="contact"/>
           </>
         }
@@ -44,6 +49,12 @@ const App = () => (
       <Route
         path="/services/visa"
         element={<ServicesVISA />}
+      />
+
+      {/* Recruitment & Staffing page */}
+      <Route
+        path="/services/recruitment-staffing"
+        element={<ServicesRecruitment />}
       />
 
       {/* Business page */}
