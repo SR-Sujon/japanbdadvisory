@@ -5,12 +5,19 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
   }
 }
 
 .animate-scroll-rtl {
-  animation: scroll-rtl 20s linear infinite;
+  animation: scroll-rtl 15s linear infinite;
+}
+
+/* Faster animation on mobile */
+@media (max-width: 768px) {
+  .animate-scroll-rtl {
+    animation: scroll-rtl 10s linear infinite;
+  }
 }
 
 .animate-scroll-rtl:hover {

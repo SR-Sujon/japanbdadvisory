@@ -13,9 +13,6 @@ const clientLogos = [
 ];
 
 const Clients = () => {
-  // Duplicate the array for seamless infinite scroll
-  const duplicatedLogos = [...clientLogos, ...clientLogos];
-
   return (
     <section id="clients" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -24,19 +21,34 @@ const Clients = () => {
           Our Clients
         </h2>
 
-        {/* Scrolling Container */}
-        <div className="relative overflow-hidden">
+        {/* Mobile: Static 2x2 Grid */}
+        <div className="md:hidden grid grid-cols-2 gap-8 max-w-md mx-auto">
+          {clientLogos.map((client, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center h-24"
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop/Tablet: Scrolling Animation */}
+        <div className="hidden md:block relative overflow-hidden">
           {/* Gradient Overlays */}
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
 
           {/* Scrolling Track */}
           <div className="flex animate-scroll-rtl">
-            {duplicatedLogos.map((client, index) => (
+            {Array(5).fill(clientLogos).flat().map((client, index) => (
               <div
-                key={index}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-                style={{ width: '200px', height: '100px' }}
+                key={`${client.name}-${index}`}
+                className="flex-shrink-0 mx-8 flex items-center justify-center w-48 lg:w-52 h-24 lg:h-28"
               >
                 <img
                   src={client.logo}
